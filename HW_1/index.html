@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_1</title>
+</head>
+
+<body>
+    <div id="reverseLetters">
+        <button class="buttonReverse" @click="reverseLetters">
+            {{ textButton }}
+        </button>
+    </div>
+
+    <div id="addElement">
+        <ul class="list">
+            <li class="list__element" v-for="element in listElement" @click="deleteElement">{{ element }}</li>
+        </ul>
+        <button class="buttonAddElemInList" @click="addNewTextElement">
+            {{ buttonName }}
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
