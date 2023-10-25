@@ -1,21 +1,22 @@
+@import 'vars';
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     font-family: 'DM Serif Display', serif;
     font-family: 'Jost', sans-serif;
-    background-color: #fff;
+    background-color: $whiteColor;
 }
 
 a {
     text-decoration: none;
+    color: $mainGreyFont;
 }
 
 img {
@@ -28,19 +29,19 @@ img {
 }
 
 .top-right {
-    border-top-right-radius: 15%;
+    border-top-right-radius: $imageCurve;
 }
 
 .top-left {
-    border-top-left-radius: 15%;
+    border-top-left-radius: $imageCurve;
 }
 
 .bottom-right {
-    border-bottom-right-radius: 15%;
+    border-bottom-right-radius: $imageCurve;
 }
 
 .bottom-left {
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: $imageCurve;
 }
 
 .header {
@@ -56,7 +57,7 @@ img {
     gap: 10px;
 
     &__text {
-        color: #292F36;
+        color: $mainGreyFont;
         font-family: DM Serif Display;
         font-size: 40px;
         font-style: normal;
@@ -73,7 +74,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 243px;
-    color: #292F36;
+    color: $mainGreyFont;
     text-align: center;
     font-family: Jost;
     font-size: 20px;
@@ -98,7 +99,7 @@ img {
 
     &__heading {
         margin-bottom: 18px;
-        color: #292F36;
+        color: $mainGreyFont;
         font-family: DM Serif Display;
         font-size: 65px;
         font-style: normal;
@@ -108,7 +109,7 @@ img {
 
     &__paragraph {
         margin-bottom: 18px;
-        color: #4D5053;
+        color: $lightGreyFont;
         font-family: Jost;
         font-size: 22px;
         font-style: normal;
@@ -125,7 +126,7 @@ img {
         gap: 7px;
         border: none;
         border-radius: 18px;
-        background: #292F36;
+        background: $mainGreyFont;
         box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
         transition: 0.3;
 
@@ -134,12 +135,12 @@ img {
         }
 
         &:hover .banner__button-svg path {
-            stroke: #292F36
+            stroke: $mainGreyFont
         }
     }
 
     &__button-link {
-        color: #fff;
+        color: $whiteColor;
         text-align: center;
         font-family: Jost;
         font-size: 18px;
@@ -154,14 +155,13 @@ img {
     margin-top: 96px;
 
     &__title {
-        color: #292F36;
+        color: $mainGreyFont;
         text-align: center;
         font-family: DM Serif Display;
         font-size: 50px;
         font-style: normal;
         font-weight: 400;
         line-height: 125%;
-        /* 62.5px */
         letter-spacing: 1px;
     }
 
@@ -171,14 +171,13 @@ img {
         width: 737px;
         margin-left: auto;
         margin-right: auto;
-        color: #4D5053;
+        color: $lightGreyFont;
         text-align: center;
         font-family: Jost;
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        /* 33px */
         letter-spacing: 0.22px;
 
     }
@@ -199,7 +198,7 @@ img {
         //        &_elem {}
 
         //       &:hover circle {
-        //            fill: #fff;
+        //            fill: $whiteColor;
         //        }
 
         &_content {
@@ -207,26 +206,24 @@ img {
             gap: 260px;
 
             &-title {
-                color: #292F36;
+                color: $mainGreyFont;
                 font-family: DM Serif Display;
                 font-size: 25px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 125%;
-                /* 31.25px */
                 letter-spacing: 0.5px;
             }
 
             &-subtitle {
                 width: 217px;
                 height: 27px;
-                color: #4D5053;
+                color: $lightGreyFont;
                 font-family: Jost;
                 font-size: 22px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
-                /* 33px */
                 letter-spacing: 0.22px;
             }
         }
@@ -264,7 +261,7 @@ img {
             }
 
             &-text {
-                color: #4d5053;
+                color: $lightGreyFont;
                 font-family: Jost;
                 font-size: 22px;
                 font-style: normal;
@@ -296,7 +293,7 @@ img {
 
     &__title {
         margin-bottom: 10px;
-        color: #292f36;
+        color: $mainGreyFont;
         text-align: center;
         font-family: DM Serif Display;
         font-size: 50px;
@@ -311,7 +308,7 @@ img {
         width: 811px;
         margin-left: auto;
         margin-right: auto;
-        color: #4d5053;
+        color: $lightGreyFont;
         text-align: center;
         font-family: Jost;
         font-size: 22px;
@@ -338,8 +335,8 @@ img {
 
         &_img {
             margin-bottom: 21px;
-            border-top-right-radius: 15%;
-            border-top-left-radius: 15%;
+            border-top-right-radius: $imageCurve;
+            border-top-left-radius: $imageCurve;
         }
 
         &_tag {
@@ -347,14 +344,14 @@ img {
             width: 124px;
             top: 247px;
             left: 40px;
-            color: #4d5053;
+            color: $lightGreyFont;
             font-family: Jost;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
             letter-spacing: 0.16px;
-            background-color: #fff;
+            background-color: $whiteColor;
             border-radius: 8px 8px 8px 0px;
             padding: 7px 9px 10px 11px;
             transition: 0.3s;
@@ -367,13 +364,12 @@ img {
             flex-direction: column;
             justify-content: center;
 
-            color: #292F36;
+            color: $mainGreyFont;
             font-family: DM Serif Display;
             font-size: 25px;
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
-            /* 31.25px */
             letter-spacing: 0.5px;
             margin-bottom: 30px;
         }
@@ -392,22 +388,16 @@ img {
                 justify-content: center;
                 flex-shrink: 0;
 
-                color: #4D5053;
+                color: $lightGreyFont;
                 font-family: Jost;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
-                /* 24px */
                 letter-spacing: 0.16px;
                 text-transform: capitalize;
             }
 
-            // &-elem {
-            //     width: 52px;
-            //     height: 52px;
-            //     flex-shrink: 0;
-            // }
         }
 
         &:hover {
@@ -415,7 +405,7 @@ img {
         }
 
         &:hover circle {
-            fill: #fff;
+            fill: $whiteColor;
         }
     }
 }
@@ -431,13 +421,12 @@ img {
         &_text {
             width: 393px;
 
-            color: #4D5053;
+            color: $lightGreyFont;
             font-family: Jost;
             font-size: 22px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
-            /* 33px */
             letter-spacing: 0.22px;
             margin-top: 18px;
             margin-bottom: 31px;
@@ -460,7 +449,7 @@ img {
 
         &_title {
             margin-bottom: 9px;
-            color: #292f36;
+            color: $mainGreyFont;
             font-family: DM Serif Display;
             font-size: 25px;
             font-style: normal;
@@ -469,13 +458,12 @@ img {
         }
 
         &_subtitle {
-            color: #4D5053;
+            color: $lightGreyFont;
             font-family: Jost;
             font-size: 22px;
             font-style: normal;
             font-weight: 400;
             line-height: 300%;
-            /* 66px */
             letter-spacing: 0.22px;
         }
     }
@@ -494,29 +482,27 @@ img {
         flex-shrink: 0;
 
         &_title {
-            color: #292F36;
+            color: $mainGreyFont;
             font-family: DM Serif Display;
             font-size: 25px;
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
-            /* 31.25px */
         }
 
         &_address,
         &_phone {
-            color: #4D5053;
+            color: $lightGreyFont;
             font-family: Jost;
             font-size: 22px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
-            /* 33px */
             letter-spacing: 0.22px;
         }
 
         &_mail {
-            color: #4D5053;
+            color: $lightGreyFont;
             font-family: Jost;
             font-size: 22px;
             font-style: normal;

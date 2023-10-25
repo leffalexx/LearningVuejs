@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "DM Serif Display", serif;
   font-family: "Jost", sans-serif;
@@ -16,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #292F36;
 }
 
 img {
@@ -150,7 +147,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 62.5px */
   letter-spacing: 1px;
 }
 .project__text {
@@ -166,7 +162,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
 }
 .project__items {
@@ -192,7 +187,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 31.25px */
   letter-spacing: 0.5px;
 }
 .project__item_content-subtitle {
@@ -204,7 +198,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
 }
 
@@ -238,7 +231,7 @@ img {
   letter-spacing: 1.7px;
 }
 .counter__content_item-text {
-  color: #4d5053;
+  color: #4D5053;
   font-family: Jost;
   font-size: 22px;
   font-style: normal;
@@ -264,7 +257,7 @@ img {
 }
 .blog__title {
   margin-bottom: 10px;
-  color: #292f36;
+  color: #292F36;
   text-align: center;
   font-family: DM Serif Display;
   font-size: 50px;
@@ -278,7 +271,7 @@ img {
   width: 811px;
   margin-left: auto;
   margin-right: auto;
-  color: #4d5053;
+  color: #4D5053;
   text-align: center;
   font-family: Jost;
   font-size: 22px;
@@ -311,7 +304,7 @@ img {
   width: 124px;
   top: 247px;
   left: 40px;
-  color: #4d5053;
+  color: #4D5053;
   font-family: Jost;
   font-size: 16px;
   font-style: normal;
@@ -335,7 +328,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 31.25px */
   letter-spacing: 0.5px;
   margin-bottom: 30px;
 }
@@ -358,7 +350,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 24px */
   letter-spacing: 0.16px;
   text-transform: capitalize;
 }
@@ -383,7 +374,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
   margin-top: 18px;
   margin-bottom: 31px;
@@ -403,7 +393,7 @@ img {
 }
 .footer__pages_title {
   margin-bottom: 9px;
-  color: #292f36;
+  color: #292F36;
   font-family: DM Serif Display;
   font-size: 25px;
   font-style: normal;
@@ -417,7 +407,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 300%;
-  /* 66px */
   letter-spacing: 0.22px;
 }
 .footer__empty {
@@ -439,7 +428,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 31.25px */
 }
 .footer__contact_address, .footer__contact_phone {
   color: #4D5053;
@@ -448,7 +436,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
 }
 .footer__contact_mail {
