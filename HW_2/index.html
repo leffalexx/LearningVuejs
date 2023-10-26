@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_2</title>
+</head>
+
+<body>
+    <div id="products">
+        <button @click="sortAscending">Ascendind</button> <button @click="sortDescending">Descending</button>
+        <ol>
+            Products ____ Price
+            <li v-for="item in products" :key="item.id">
+                {{ item.name }} ___ {{ item.price }}
+            </li>
+        </ol>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
