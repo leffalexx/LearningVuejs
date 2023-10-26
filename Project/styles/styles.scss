@@ -80,6 +80,10 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
+
+    &__link {
+        color: $mainGreyFont;
+    }
 }
 
 .banner {
